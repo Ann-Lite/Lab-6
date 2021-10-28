@@ -1,0 +1,34 @@
+﻿<Window x:Class="Lab_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_6"
+       mc:Ignorable="d"
+        Title="Пара чисел" Height="257" Width="382">
+    <Grid>
+        <GroupBox Header="Первая пара " HorizontalAlignment="Left" Height="136" Margin="17,17,0,0" VerticalAlignment="Top" Width="173">
+            <Grid Margin="5,0,0,0" HorizontalAlignment="Left" Width="154" Height="110">
+                <TextBlock HorizontalAlignment="Left" Margin="9,11,0,0" Text="Первое число" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                <TextBox x:Name="firstP1" HorizontalAlignment="Left" Margin="10,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="firstP1_TextChanged"/>
+                <TextBlock HorizontalAlignment="Left" Margin="12,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Второе число"/></TextBlock>
+                <TextBox x:Name="secondP1" HorizontalAlignment="Left" Margin="12,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="secondP1_TextChanged"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Вторая пара" HorizontalAlignment="Left" Height="136" Margin="191,18,0,0" VerticalAlignment="Top" Width="161">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="9,11,0,0" Text="Первое число" TextWrapping="Wrap" VerticalAlignment="Top"/>
+                <TextBox x:Name="firstP2" HorizontalAlignment="Left" Margin="10,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="firstP2_TextChanged"/>
+                <TextBlock HorizontalAlignment="Left" Margin="12,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Второе число"/></TextBlock>
+                <TextBox x:Name="secondP2" HorizontalAlignment="Left" Margin="12,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="secondP2_TextChanged"/>
+            </Grid>
+        </GroupBox>
+        <TextBlock HorizontalAlignment="Left" Margin="21,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Ответ"/></TextBlock>
+        <TextBox x:Name="rez" HorizontalAlignment="Left" Margin="65,163,0,0" IsReadOnly="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Решение" HorizontalAlignment="Left" Margin="208,163,0,0" VerticalAlignment="Top" Click="resolution"/>
+        <Button Content="X" HorizontalAlignment="Left" Height="18" Margin="324,1,0,0" VerticalAlignment="Top" Width="18" Click="exit"/>
+        <Button Content="?" HorizontalAlignment="Left" Height="18" Margin="347,1,0,0" VerticalAlignment="Top" Width="18" Click="info"/>
+        <Button Content="Сброс" HorizontalAlignment="Left" Margin="281,163,0,0" VerticalAlignment="Top" Width="49" Click="reset"/>
+
+    </Grid>
+</Window>

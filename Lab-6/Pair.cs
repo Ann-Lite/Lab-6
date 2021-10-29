@@ -6,14 +6,14 @@ namespace PairNumber
 {
     class Pair
     {
-        public Pair(int initFirst, int initSecond)
+        public Pair(double initFirst, double initSecond)
         {
             _first = initFirst;
             _second = initSecond;
         }
 
-        public double _first;
-        public double _second;
+        private double _first;
+        private double _second;
 
         public double First
         {

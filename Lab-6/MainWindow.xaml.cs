@@ -26,7 +26,6 @@ namespace Lab_6
             InitializeComponent();
         }
 
-
         private void resolution(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(firstP1.Text, out int initiFirstP1) && int.TryParse(firstP2.Text, out int initiFirstP2)
@@ -34,12 +33,14 @@ namespace Lab_6
             {
                 Pair pair1 = new Pair(initiFirstP1, initiSecondP1);
                 Pair pair2 = new Pair(initiFirstP2, initiSecondP2);
-                if (pair1 > pair2 || (pair1 == pair2 && pair1 > initiSecondP2))
+                if (pair1 > pair2 || (pair1 == pair2 && pair1 > pair2))
                 {
                     rez.Text = "Перая пара чисел больше, чем вторая";
                 }
-                else rez.Text = "Вторая пара чисел больше, чем первая";
-
+                else
+                {
+                    rez.Text = "Вторая пара чисел больше, чем первая";
+                }
             }
             else MessageBox.Show("Поля не заполнены или заполнены не верно");
         }

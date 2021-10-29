@@ -28,8 +28,8 @@ namespace Lab_6
 
         private void resolution(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(firstP1.Text, out int initiFirstP1) && int.TryParse(firstP2.Text, out int initiFirstP2)
-                && int.TryParse(secondP1.Text, out int initiSecondP1) && int.TryParse(secondP2.Text, out int initiSecondP2))
+            if (double.TryParse(firstP1.Text, out double initiFirstP1) && double.TryParse(firstP2.Text, out double initiFirstP2)
+                && double.TryParse(secondP1.Text, out double initiSecondP1) && double.TryParse(secondP2.Text, out double initiSecondP2))
             {
                 Pair pair1 = new Pair(initiFirstP1, initiSecondP1);
                 Pair pair2 = new Pair(initiFirstP2, initiSecondP2);
